@@ -1,0 +1,51 @@
+{
+  "name": "interject",
+  "version": "0.0.0",
+  "description": "Do something just before a callback is executed",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul test test/*.js",
+    "test-watch": "nodemon --exec tape test/*.js",
+    "test-browser": "browserify test/*.js | testling",
+    "view-cover": "istanbul report html && open coverage/index.html",
+    "travis-test": "istanbul cover test/*.js && ((cat coverage/lcov.info | coveralls) || exit 0)"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonpincin/interject"
+  },
+  "keywords": [
+    "callback",
+    "interject",
+    "before"
+  ],
+  "author": "Jason Pincin <jason@pincin.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonpincin/interject/issues"
+  },
+  "homepage": "https://github.com/jasonpincin/interject",
+  "devDependencies": {
+    "tape": "~2.12.0",
+    "coveralls": "~2.10.0",
+    "nodemon": "~1.0.17",
+    "testling": "~1.6.1",
+    "istanbul": "~0.2.6"
+  },
+  "testling": {
+    "files": "test/*.js",
+    "browsers": [
+      "ie/8..latest",
+      "firefox/16..latest",
+      "firefox/nightly",
+      "chrome/22..latest",
+      "chrome/canary",
+      "opera/12..latest",
+      "opera/next",
+      "safari/5.1..latest",
+      "ipad/6.0..latest",
+      "iphone/6.0..latest",
+      "android-browser/4.2..latest"
+    ]
+  }
+}
