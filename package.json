@@ -26,11 +26,7 @@
   },
   "homepage": "https://github.com/jasonpincin/interject",
   "devDependencies": {
-    "tape": "~2.12.0",
-    "coveralls": "~2.10.0",
-    "nodemon": "~1.0.17",
-    "testling": "~1.6.1",
-    "istanbul": "~0.2.6"
+    "tape": "~2.12.0"
   },
   "testling": {
     "files": "test/*.js",
