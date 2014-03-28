@@ -1,6 +1,14 @@
 interject
 =========
 
+[![Build Status](https://travis-ci.org/jasonpincin/interject.svg?branch=master)](https://travis-ci.org/jasonpincin/interject)
+[![Coverage Status](https://coveralls.io/repos/jasonpincin/interject/badge.png?branch=master)](https://coveralls.io/r/jasonpincin/interject?branch=master)
+[![NPM version](https://badge.fury.io/js/geval.png)](http://badge.fury.io/js/interject)
+[![Davis Dependency Status](https://david-dm.org/jasonpincin/interject.png)](https://david-dm.org/jasonpincin/interject)
+
+[![browser support](https://ci.testling.com/jasonpincin/interject.png)
+](https://ci.testling.com/jasonpincin/interject)
+
 Do something as an aside to a callback.
 
 Potentially useful for logging calls to particular callbacks. Maybe other stuff too.
