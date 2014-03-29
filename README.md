@@ -46,16 +46,16 @@ sayLogged('Interject me please.', afterSay);
 
 ## api
 
-### `var interjected = interject(func, function interjection () {})`
+### `var f = interject(func, function interjection () {})`
 
 ```javascript
-interjected(function callback () {
+f(function callback () {
     /* do something */
 });
 ```
 
 Assuming the implementation of `func` accepts a callback (as it's last parameter), the function returned by 
-`interject` will invoke both the `interjection` (as an aside) and the `callback` provided to `interjected` at the 
+`interject` will invoke both the `interjection` (as an aside) and the `callback` provided to `f` at the 
 time the `func` implementation would have executed it's callback. It's important to note that the `interjection` will be 
 called just before the `callback`, but it is not gauranteed to complete before `callback` is called.
 
@@ -67,10 +67,10 @@ Also of note - when nesting interjections, the interjections will be called in t
 ```javascript
 var original = function (cb) { cb() };
 var interjection1 = function () { /* I am called 1st */ };
-var interjected = interject(original, interjection1);
+var f = interject(original, interjection1);
 var interjection2 = function () { /* I am called 2nd */ };
-var interjected = interject(interjected, interjection2);
-interjected();
+var f = interject(f, interjection2);
+f();
 ```
 
 ## install
