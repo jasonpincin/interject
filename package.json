@@ -17,7 +17,9 @@
   "keywords": [
     "callback",
     "interject",
-    "before"
+    "aside",
+    "before",
+    "after"
   ],
   "author": "Jason Pincin <jason@pincin.com>",
   "license": "MIT",
