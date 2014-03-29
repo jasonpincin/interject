@@ -28,7 +28,8 @@
   },
   "homepage": "https://github.com/jasonpincin/interject",
   "devDependencies": {
-    "tape": "~2.12.0"
+    "tape": "~2.12.0",
+    "browserify": "~3.35.0"
   },
   "testling": {
     "files": "test/*.js",
