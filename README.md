@@ -77,6 +77,13 @@ f();
 
 `npm install interject`
 
-## license
+## testing
 
-MIT
+`npm test [--dot | --spec] [--coverage | --grep=pattern]`
+
+Specifying `--dot` or `--spec` will change the output from the default TAP style. 
+Specifying `--coverage` will print a text coverage summary to the terminal after 
+tests have ran, while `--pattern` will only run the test files that match the given 
+pattern.
+
+Open an html coverage report with `npm run view-cover`.
