@@ -8,8 +8,10 @@ interject
 
 ## deprecated
 
-*This module is deprecated.* Use [call-hook](https://github.com/jasonpincin/call-hook) 
+This module is deprecated. Use [call-hook](https://github.com/jasonpincin/call-hook) 
 instead. It's much better.
+
+
 
 Do something as an aside to a callback.
 
