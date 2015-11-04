@@ -6,6 +6,11 @@ interject
 [![Coverage Status](https://coveralls.io/repos/jasonpincin/interject/badge.png?branch=master)](https://coveralls.io/r/jasonpincin/interject?branch=master)
 [![Davis Dependency Status](https://david-dm.org/jasonpincin/interject.png)](https://david-dm.org/jasonpincin/interject)
 
+## deprecated
+
+*This module is deprecated.* Use [call-hook](https://github.com/jasonpincin/call-hook) 
+instead. It's much better.
+
 Do something as an aside to a callback.
 
 Potentially useful for logging calls to particular callbacks. Maybe other stuff too.
