@@ -1,6 +1,6 @@
 {
   "name": "interject",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Do something just before a callback is executed",
   "main": "index.js",
   "scripts": {
